@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+
+     <style>
+          body {
+               padding: 0;
+               margin: 0;
+          }
+          h2 {
+               padding-bottom: 50px;
+               color: #2762ab;
+          }
+     </style>
+</head>
+<body>
+     <!-- <div>
+          <img src="landing-top-background-img2-1.jpg">
+     </div> -->
+     <div style="text-align: center; background-image: url(/img/landing-top-background-img2-1.jpg); padding: 40px 0;">
+          <img src="/img/screenshot-www.instagram.com-2020.06.25-14_28_59.jpg" style="border: solid 2px #e5e5e5;
+          border-radius: 50%;">
+
+          <h1 style="color:#2762ab">Abdulrhman Alsayed</h1>
+          <h4>(IT) Web Designer, Graphic Designer & Frontend Developer</h4>
+          <h4>Email: abdarhmanalsayed1@gmail.com</h4>
+          <h4>Phone: +966 551756880</h4>
+     </div>
+     <div style="padding: 85px 200px;">
+          <div>
+               <h2 style="text-align: center;">Introduction</h2>
+               <p style="padding-bottom: 30px; text-align: center;">
+                    Abdurhman Alsayed Ibrahim, 2 years experience as a web designer. I have chosen web design and development because I love the magic of creativity and I’m aspire to be professional in both web design and web development. 
+               </p>
+     
+               <li id="birth"></li>
+               <li id="age"></li>
+               <li id="city"></li>
+               <li id="nationality"></li>
+               <li id="Social"></li>
+               <li id="Degree"></li>
+               <li id="email"></li>
+
+          </div>
+          <br>
+          <br>
+          <br>
+          <hr style="width:50%">
+          <br>
+          <br>
+          <div>
+               <h2 style="text-align: center;">Services & Skills </h2>
+               
+               <ul id="skills">
+                    <li>UX/UI Design using Adobe XD</li>
+                    <li>Graphic Design using Adobe photoshop, illustrator and Adobe inDesign</li>
+                    <li>Design website using HTML & CSS</li>
+                    <li>Design website using Wordpress & Elementor</li>
+                    <li>Design website using Wix</li>
+                    <li>E-commerce website using Woocommerce and OpenCard</li>
+                    <li>Frontend developer using HTML, CSS, JavaScript and React Js</li>
+                    <li>Domain & Hosting Issues</li>
+                    <li>SEO, Social Media Marketing and Google Adwords</li>
+               </ul>
+
+          </div>
+
+
+          <br>
+          <br>
+          <br>
+          <hr style="width:50%">
+          <br>
+          <br>
+          <div>
+               <h2 style="text-align: center;">Experience</h2>
+               
+               <h5>April 2019 – July 2019</h5>
+               <h3>Web Designer trainee at at Elsewedy company (Egypt)</h3>
+               <h5>Web Designer using HTML & CSS</h5>
+               <br>
+               <br>
+               <hr style="width:50%; text-align: left;">
+               <br>
+               <br>
+               <h5>August 2019 – current </h5>
+               <h3>Junior Web Designer & Developer at PixelSoft company (Al Khobar))</h3>
+               <h5>Web Designer using HTML & CSS, WordPress and Elementor</h5>
+               <br>
+               <br>
+               <br>
+               <h3>Languages </h3>
+               <li>Arabic – native</li>
+               <li>English</li>
+
+
+          </div>
+          <br>
+          <br>
+          <br>
+          <hr style="width:50%">
+          <br>
+          <br>
+          <div>
+               <h2 style="text-align: center;"> My Recent Work </h2>
+               
+               <ul class="work">
+
+                    <li><a href="http://www.flashd-sa.com">http://www.flashd-sa.com</a></li>
+                    <li><a href="http://perfectstore.online">http://perfectstore.online</a></li>
+                    <li><a href="https://drinkatleft.com">https://drinkatleft.com</a></li>
+                    <li><a href="https://perfectdes.com">https://perfectdes.com</a></li>
+                    <li><a href="https://www.jana-sa.org">https://www.jana-sa.org</a></li>
+                    <li><a href="https://www.pwc.com.sa">https://www.pwc.com.sa</a></li>
+                    <li><a href="http://www.stonevillage.com.sa">http://www.stonevillage.com.sa</a></li>
+                    <li><a href="http://www.safinacatering.com">http://www.safinacatering.com</a></li>
+                    <li><a href="http://mtr-global.com">http://mtr-global.com"</a></li>
+                    <li><a href="https://pcc-groups.com">https://pcc-groups.com</a></li>
+                    <li><a href="http://moog.sa">http://moog.sa</a></li>
+                    <li><a href="http://billa.com.sa">http://billa.com.sa</a></li>
+                    <li><a href="http://ooj.com.sa">http://ooj.com.sa</a></li>
+               </ul>
+
+          </div>
+     </div>
+</body>
+<script>
+     fetch('main.json').then(function (res) {
+          return res.json();
+     }).then(function (data) {
+          console.log(data);
+
+          // personal Information
+          document.getElementById("email").innerHTML = `Email:` + data.personalinfo.Email;
+          document.getElementById("Degree").innerHTML = `Degree:` + data.personalinfo.Degree;
+          document.getElementById("birth").innerHTML = `BirthDay:` + data.personalinfo.birth;
+          document.getElementById("city").innerHTML = `City:` + data.personalinfo.city;
+          document.getElementById("Social").innerHTML = `Social status:` + data.personalinfo.Social;
+          document.getElementById("nationality").innerHTML = `Nationality:` + data.personalinfo.nationality;
+          document.getElementById("age").innerHTML = `Age:` + data.personalinfo.age;
+
+          //Skills
+          // document.getElementById("skills").innerHTML = data.skills.map(function(item) {
+          //      return (
+          //          <li>{item}</li>
+          //      );
+          // })
+     
+     }).catch(function (err) {
+          console.log(err);
+     })
+</script>
+</html>

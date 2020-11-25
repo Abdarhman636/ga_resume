@@ -1,0 +1,41 @@
+{
+     "personalinfo": {
+          "name": "Abdulrhman",
+          "birth":"9/1091996",
+          "city":"khobar",
+          "age": "24",
+          "nationality": "Egyption",
+          "Social": "Single",
+          "Degree": "Bachelor",
+          "Email": "abdarhmanalsayed1@gmail.com", 
+          "phone": "0551756880"
+     },
+
+     "skills": [
+          "UX/UI Design using Adobe XD",
+          "Graphic Design using Adobe photoshop, illustrator and Adobe inDesign",
+          "Design website using HTML & CSS",
+          "Design website using Wordpress & Elementor",
+          "Design website using Wix",
+          "E-commerce website using Woocommerce and OpenCard",
+          "Frontend developer using HTML, CSS, JavaScript and React Js",
+          "Domain & Hosting Issues",
+          "SEO, Social Media Marketing and Google Adwords"
+     ],
+
+     "work": [
+          "http://www.flashd-sa.com ",
+          "http://perfectstore.online",
+          "https://drinkatleft.com",
+          "https://perfectdes.com",
+          "https://www.jana-sa.org",
+          "https://www.pwc.com.sa",
+          "http://www.stonevillage.com.sa",
+          "http://www.safinacatering.com",
+          "http://mtr-global.com",
+          "https://pcc-groups.com",
+          "http://moog.sa",
+          "http://billa.com.sa",
+          "http://ooj.com.sa"
+     ]
+}
